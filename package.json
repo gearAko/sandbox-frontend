@@ -19,6 +19,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
+    "sass": "^1.108.1",
     "typescript": "^5"
   },
   "packageManager": "pnpm@12.11.2"
