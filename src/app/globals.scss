@@ -1,21 +1,55 @@
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@use "../styles/variables" as *;
+@use "../styles/reset";
+@use "../styles/mixins";
+@use "../styles/animations";
+@use "../styles/fonts" as *;
+
+:root {
+  --bg: #{$bg-light};
+  --fg: #{$fg-light};
+  --primary: #{$primary-light};
+  --primary-hover: #{$primary-hover-light};
+  --muted: #{$muted-light};
+  --border: #{$border-light};
+
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  --font-ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-nerd: "Geist Mono", monospace;
+}
+
+[data-theme="dark"] {
+  --bg: #{$bg-dark};
+  --fg: #{$fg-dark};
+  --primary: #{$primary-dark};
+  --primary-hover: #{$primary-hover-dark};
+  --muted: #{$muted-dark};
+  --border: #{$border-dark};
+
+  --shadow-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
-  color: inherit;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  color: var(--fg);
+  background-color: var(--bg);
+  transition: background-color $transition-base, color $transition-base;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
 }

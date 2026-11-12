@@ -1,0 +1,6 @@
+// Styles barrel — forwards module-safe partials only.
+// _reset.scss and _fonts.scss are NOT forwarded because they contain
+// global styles that cannot be used inside CSS Modules.
+@forward "./variables";
+@forward "./mixins";
+@forward "./animations";

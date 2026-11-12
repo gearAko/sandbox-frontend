@@ -1,0 +1,33 @@
+// Color palette — warm cream/beige base with purple accents
+// Light mode
+$bg-light: #fdfaf5;       // warm cream
+$fg-light: #181818;       // near-black warm
+$primary-light: #a855f7;  // purple accent
+$primary-hover-light: #9333ea;
+$muted-light: #78716c;    // warm gray
+$border-light: #e7e5e4;   // warm gray border
+
+// Dark mode
+$bg-dark: #181818;        // near-black
+$fg-dark: #fdfaf5;        // warm cream
+$primary-dark: #c084fc;   // lighter purple for dark mode
+$primary-hover-dark: #e879f9;
+$muted-dark: #a8a29e;     // warm light gray
+$border-dark: #3a3a3a;    // dark warm gray
+
+// Spacing tokens
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 3rem;
+
+// Breakpoint tokens
+$bp-sm: 640px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+// Transition tokens
+$transition-fast: 0.2s ease;
+$transition-base: 0.3s ease;

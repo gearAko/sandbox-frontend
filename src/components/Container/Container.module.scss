@@ -1,0 +1,13 @@
+@use "../../styles/variables" as *;
+
+.container {
+  width: 100%;
+  background: transparent;
+}
+
+.block {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--bg);
+  color: var(--fg);
+}

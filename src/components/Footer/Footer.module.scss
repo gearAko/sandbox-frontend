@@ -1,0 +1,19 @@
+@use "../../styles/variables" as *;
+
+.footer {
+  padding: $space-lg $space-sm;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+  background-color: var(--bg);
+  font-family: var(--font-nerd);
+
+  @media (min-width: 640px) {
+    padding: $space-lg $space-md;
+  }
+
+  @media (min-width: 1024px) {
+    padding: $space-lg $space-lg;
+  }
+}

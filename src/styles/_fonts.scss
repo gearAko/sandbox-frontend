@@ -1,0 +1,6 @@
+// Fonts are self-hosted via next/font/google in layout.tsx.
+// Geist Sans (UI) and Geist Mono (headings) are loaded automatically.
+// Keep this file for future token overrides if needed.
+
+$nerd-font: var(--font-geist-mono);
+$ui-font: var(--font-geist-sans);
